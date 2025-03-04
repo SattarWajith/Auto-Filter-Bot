@@ -9,8 +9,8 @@ from motor.motor_asyncio import AsyncIOMotorClient
 from marshmallow.exceptions import ValidationError
 from info import DATABASE_URL, SECOND_DATABASE_URL, DATABASE_NAME, COLLECTION_NAME, MAX_BTN
 
-client = AsyncIOMotorClient(DATABASE_URL)
-db = client[DATABASE_NAME]
+client = AsyncIOMotorClient(mongodb+srv://sattar-wajith:F1I2S3T4A5@cluster0.demdt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0)
+db = client[Clustor0]
 instance = Instance.from_db(db)
 
 @instance.register
